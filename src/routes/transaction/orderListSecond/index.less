@@ -1,0 +1,299 @@
+.example {
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    margin: 20px 0;
+}
+
+.orderListSecond {
+    padding: 3px 12px;
+    height: 100%;
+    flex: 1 1 auto;
+    position: relative;
+    word-break: break-word;
+    overflow-y: hidden;
+
+    .ZeroPlusTick {
+        color: #3e8654;
+    }
+
+    .ZeroMinusTick {
+        color: #ae543b;
+    }
+
+    .MinusTick {
+        color: #d16547;
+    }
+
+    .PlusTick {
+        color: #4aa165;
+    }
+
+    .up {
+        animation: myfirst 0.5s;
+    }
+
+    .down {
+        animation: mysecond 0.5s;
+    }
+
+    .resizesensor-wrapper {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .orderBook {
+            font-size: 12px;
+
+            .lastPriceWidget {
+                text-align: center;
+                font-size: 12px;
+                margin: 0 0 1px 0;
+                // background: @layout-header-background;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                height: 32px;
+                overflow: hidden;
+
+                .lastTick {
+                    font-size: 19px;
+                    text-align: center;
+                    font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+                    font-weight: bold;
+                    flex-grow: 1;
+                    overflow: hidden;
+                }
+
+                .limits {
+                    font-size: 14px;
+                    -webkit-flex-basis: auto;
+                    -ms-flex-preferred-size: auto;
+                    flex-basis: auto;
+                    min-width: 50%;
+                    -webkit-box-flex: 0;
+                    -webkit-flex-grow: 0;
+                    -ms-flex-positive: 0;
+                    flex-grow: 0;
+                    margin-top: 0;
+                    line-height: 32px;
+                    font-weight: bold;
+
+                    .indicativeSettlePrice {
+                        padding: 2px;
+
+                        i {
+                            font-style: normal;
+                        }
+
+                        color: @indicative_settle_price;
+                        border: none;
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+
+                    .indicativeSettlePrice:hover {
+                        background: rgba(82, 179, 112, 0.25)
+                    }
+
+                    .fairPrice {
+                        a {
+                            padding: 2px;
+                            color: @text-color_copy;
+                            margin-left: 3px;
+                        }
+
+                        a:hover {
+                            background: rgba(82, 179, 112, 0.25)
+                        }
+                    }
+                }
+            }
+
+            .flexBody {
+                display: flex;
+
+                .depthBar {
+                    right: 0;
+                    background-color: @buy-order-bar-color;
+                    mix-blend-mode: multiply;
+                    top: 0;
+                    bottom: 0;
+                    position: absolute;
+                }
+
+                .output {
+                    padding-right: 3px;
+                    position: relative;
+                }
+
+                .table-container {
+                    margin-top: -4px;
+                    margin-bottom: 0;
+                    padding-top: 1px;
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    table {
+                        table-layout: fixed;
+                        border-right: 0;
+                        width: 100%; // border: 1px solid #bbb;
+                        border-collapse: collapse;
+
+                        tbody {
+                            .liquidation {
+                                color: #e8704f;
+                                font-weight: bold;
+                                border-bottom: 1px dotted;
+                            }
+                        }
+
+                        th {
+                            white-space: nowrap;
+                            font-weight: 600;
+                            font-size: 95%;
+                            height: 40px;
+                            padding: 1px 5px !important;
+                            color:@orderlist_title_color;
+                            width: 33.3333333333%;
+                            text-align: right;
+                            word-break: normal;
+                        }
+
+                        tbody tr {
+                            height: 21px;
+                            line-height: 21px;
+                        }
+                    }
+
+                    .cumSize {
+                        .th-inner {
+                            height: 20px;
+                            line-height: 21px;
+                        }
+                    }
+
+                    .price {
+                        font-weight: 500;
+                    }
+
+                    .table-container-inner {
+                        td {
+                            padding: 0px 4px;
+                            white-space: nowrap;
+                        }
+
+                        overflow: hidden;
+                        height: 100%;
+                    }
+                }
+
+                // .table-container tbody>tr:nth-child(odd)>td {
+                //     background-color: @table_row_back;
+                // }
+            }
+
+            .bids {
+
+                td.price {
+                    color: @buy-order-color;
+                }
+
+                tbody tr:hover {
+                    background: @orderlist_hover_bar;
+                    z-index: 20;
+                }
+            }
+
+            .asks {
+                .depthBar {
+                    left: 0;
+                    background-color: @sell-order-bar-color;
+                }
+
+                td.price {
+                    color: @sell-order-color;
+                }
+
+                tbody tr:hover {
+                    background: @orderlist_hover_bar;
+                    z-index: 20;
+                }
+            }
+        }
+
+        .orderBook td {
+            height: 20px;
+            width: 33.3333333333%;
+            text-align: right;
+        }
+
+
+        .orderBook td>div {
+            position: relative;
+            z-index: 10;
+            height: 15px;
+            line-height: 16px;
+        }
+
+        .selt_order {
+            color: #a48c46;
+            font-weight: bold !important;
+            border-bottom: 0;
+        }
+    }
+}
+
+.positionDeleverageIndicatorWrapper {
+    display: inline-block;
+    position: relative;
+    margin-left: .3846153846rem;
+    padding-left: .3076923077rem;
+    line-height: 22px;
+
+    .positionDeleverageIndicator {
+        .leverageLight {
+            display: inline-block;
+            height: 14px;
+            width: 6px;
+            margin-right: 3px;
+        }
+
+        .statusGreen {
+            background: @light_status_color;
+        }
+
+        .statusGreen.inactive {
+            background: @light_status_back;
+            border-color: #999;
+        }
+    }
+
+    .positionDeleverageIndicator:hover {
+        cursor: pointer;
+        // background: rgba(82, 179, 112, 0.25);
+    }
+
+    .positionDeleverageIndicator {
+        content: " ";
+        vertical-align: middle;
+        display: inline-block;
+        height: 100%;
+    }
+}
+
+
+@keyframes myfirst {
+    0% {
+        background: rgba(232, 112, 79, 0.4);
+    }
+}
+
+@keyframes mysecond {
+    0% {
+        background: rgba(82, 179, 112, 0.4);
+    }
+}

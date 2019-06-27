@@ -1,0 +1,294 @@
+/*
+ * @Author: 刘文柱 
+ * @Date: 2018-10-18 10:08:42 
+ * @Last Modified by:   刘文柱 
+ * @Last Modified time: 2018-10-18 10:08:42 
+ */
+ .ant-btn-group-sm > .ant-btn:first-child:not(:last-child), .ant-btn-group-sm > span:first-child:not(:last-child) > .ant-btn{
+     border-radius:0;
+ }
+ .ant-btn-group-sm > .ant-btn:last-child:not(:first-child), .ant-btn-group-sm > span:last-child:not(:first-child) > .ant-btn{
+    border-radius:0;
+}
+.textOverflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+.ant-popover-arrow{
+    display: none;
+}
+.ant-popover-inner{
+    border-radius: 0;
+}
+.button-color-geekblue {//清除颜色
+    background-color: #24B36B;
+    border-color: #24B36B;
+
+    &:hover,
+    &:focus {
+        background-color: #24B36B;
+        border-color: #24B36B;
+    }
+
+    &:active,
+    &.active {
+        background-color: #24B36B;
+        border-color: #24B36B;
+    }
+}
+.button-color-dust {
+    background-color: #e34e4d;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: #e34e4d;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #e34e4d;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+}
+
+.button-color-sunset {
+    background-color: #7e8781;
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #656d67;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #656d67;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+}
+
+.button-color-cyan {
+    background-color: #71947c;
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #5a7863;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #5a7863;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+}
+
+
+
+.button-color-purple {
+    color: #fff;
+    background-color: #4ab0ce;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: #3196b4;
+        border-color: #26758c;
+    }
+
+    &:active,
+    &.active {
+        color: #fff;
+        background-color: #3196b4;
+        border-color: #26758c;
+    }
+}
+
+.button-color-green {
+    background-color: #52C41A;
+    border-color: #52C41A;
+    color: white;
+    &:hover,
+    &:focus {
+        background-color: #73d13d;
+        border-color: #73d13d;
+        color: white;
+    }
+
+    &:active,
+    &.active {
+        background-color: #389e0d;
+        border-color: #389e0d;
+        color: white;
+    }
+}
+
+.textOverflowMulti(@line: 3, @bg: #fff) {
+    overflow: hidden;
+    position: relative;
+    line-height: 1.5em;
+    max-height: @line * 1.5em;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+
+    &:before {
+        background: @bg;
+        content: '...';
+        padding: 0 1px;
+        position: absolute;
+        right: 14px;
+        bottom: 0;
+    }
+
+    &:after {
+        background: white;
+        content: '';
+        margin-top: 0.2em;
+        position: absolute;
+        right: 14px;
+        width: 1em;
+        height: 1em;
+    }
+}
+
+// mixins for clearfix
+// ------------------------
+.clearfix() {
+    zoom: 1;
+
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+    }
+}
+
+.notification {
+    float: right;
+    font-size: 13px;
+    padding: 0 5px;
+}
+
+.ant-notification-notice-message {
+    margin: 0;
+}
+.ant-notification{
+    min-width: 400px;
+}
+
+.error {
+    background: #faded6;
+}
+
+.button-color-volcano {
+    background-color: #DE9C8B;
+    border-color: #B87A72;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #DE9C8B;
+        border-color: #B87A72;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #DE9C8B;
+        border-color: #B87A72;
+        color: #fff;
+    }
+}
+.button-color-greenP {
+    background-color: #5CB579;
+    border-color: #399055;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #5CB579;
+        border-color: #399055;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #5CB579;
+        border-color: #399055;
+        color: #fff;
+    }
+}
+.button-color-redP {
+    background-color: #F09685;
+    border-color: #CA6A69;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #F09685;
+        border-color: #CA6A69;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #F09685;
+        border-color: #CA6A69;
+        color: #fff;
+    }
+}
+.button-color-greenS {
+    background-color:#2EA76B;
+    border-color: #2F7B55;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #2EA76B;
+        border-color: #2F7B55;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color:#2EA76B;
+        border-color: #2F7B55;
+        color: #fff;
+    }
+}
+.ant-slider-handle{
+    border: solid 3px #4e88f0;
+}
+.close-icon-img{
+    width: 15px;
+    height: 11px;
+    display: inline-block;
+    background-size: 15px 10px;
+    background-image: url(../assets/close.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}

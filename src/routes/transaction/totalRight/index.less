@@ -1,0 +1,124 @@
+.moveModal_connecting{
+    top: 15% !important;
+    // .ant-modal-header{
+    //     text-align: center;
+    //     font-size: 18px !important;
+    // }
+}
+.spinner {
+    margin: 20px auto;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #4e88f0;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+  }
+  .spinner > div:not(:last-child){
+    margin-right: 5px;
+  }
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+.totalRight {
+    height: calc(100% - 25px) !important;
+    padding: 10px 13px;
+    font-size: 12px;
+    font-weight: normal;
+
+    .marginDisplay {
+        border-bottom: none;
+        text-align: left;
+        height: 100%;
+
+        .rowRight {
+            margin: 0;
+            height: 16.6%;
+            overflow: hidden;
+            position: relative;
+
+            .margin_label {
+                width: 100%;
+                position: absolute;
+                top: 4px;
+            }
+
+            .dataBar {
+                min-width: 1px;
+                position: absolute;
+                height: calc(100% - 25px);
+                bottom:0;
+                min-height: 4px;
+                overflow: hidden;
+                display: inline-block;
+                -webkit-transition: all 1s;
+                transition: all 1s;
+                -webkit-transition-property: width, color, margin-left;
+                transition-property: width, color, margin-left;
+            }
+
+            .right {
+                margin-right: 3px;
+                font-weight: bold;
+                float: right;
+            }
+        }
+
+        // .rowRight:last-child{
+        //     border-bottom: none;
+        // }
+        .barOuter {
+            border-bottom: 3px solid #52b370;
+        }
+    }
+
+    .rowRight_last {
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 20px;
+        height: 20px;
+        font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-weight: bold;
+        color: @margin_last_text;
+        opacity: 0.6;
+    }
+}

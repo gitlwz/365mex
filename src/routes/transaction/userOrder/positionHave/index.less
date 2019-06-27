@@ -1,0 +1,88 @@
+.minWidth145 {
+    min-width: 165px !important;
+}
+
+.minWidth55 {
+    min-width: 65px;
+}
+
+.minWidth60 {
+    min-width: 60px;
+}
+
+.orderList {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .red {
+        color: #ae543b;
+    }
+
+    .green {
+        //a
+        color: #3e8654;
+    }
+
+    .up {
+        animation: myfirst 0.8s;
+    }
+
+    .down {
+        animation: mysecond 0.8s;
+    }
+
+    .orderListTable {
+        .ant-input-number-input {
+            font-size: 12px;
+        }
+
+        .input-position-price {
+            color: #333333;
+            width: 90px;
+            height: 22px;
+            padding: 0 7px;
+            text-align: left;
+            border: 1px solid #566c7d;
+            margin: 0 5px;
+        }
+    }
+
+    .ant-table-small>.ant-table-content>.ant-table-scroll>.ant-table-body>table>.ant-table-thead>tr>th {
+        border-bottom: none;
+    }
+}
+
+@keyframes myfirst {
+    0% {
+        background: rgba(232, 112, 79, 0.4);
+    }
+}
+
+@keyframes mysecond {
+    0% {
+        background: rgba(82, 179, 112, 0.4);
+    }
+}
+
+// .orderList-notification{
+//     color:#7ca2bd;
+//     .ant-notification-notice-message{
+//         width: 100%;
+//     }
+// }
+// .orderList-notification-error{
+//     background: #faded6;
+//     color: #8c2c12;
+//     .ant-notification-notice-message{
+//         width: 100%;
+//     }
+// }
+// .orderList-notification-success{
+//     background: #bce2c8;
+//     color: #316e44;
+//     .ant-notification-notice-message{
+//         width: 100%;
+//     }
+// }

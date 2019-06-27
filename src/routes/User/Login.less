@@ -1,0 +1,85 @@
+.js-login {
+    height: calc(100vh - 64px);
+    min-height: 750px;
+    position: relative;
+    background: url(../../assets/background.png) no-repeat;
+    background-color: #1E2832;
+    background-position: center;
+    background-size: 70%;
+
+.qdp-login-main {
+    width: 25%;
+    max-width: 460px;
+    min-width: 400px;
+    // height: 375px;
+    // max-height: 332px;
+    // min-height: 325px;
+    
+    padding: 40px 30px;
+    background-color: #fff;
+    position: relative;
+    top: calc(45% - 160px);
+    margin: 0 auto;
+    border-radius: 4px;
+    // right: 50%; 
+    // margin-right: -201px;
+    // margin-top: -240px;
+    @media screen and (max-width: @screen-sm) {
+        width: 95%;
+    }
+    .js-clear-float {
+        clear: both;
+    }
+    .quant-login {
+        input {
+            height: 50px;
+            border-radius: 0px;
+        }
+        .ant-form-item-with-help {
+            margin-bottom: 1px!important;
+        }
+        .ant-form-item {
+            margin-bottom: 20px;
+        }
+        .ant-tabs-bar {
+            margin-bottom: 40px;
+            .ant-tabs-tab-active {
+                color: #333333;
+                font-weight: 400;
+                padding: 0px;
+                font-size: 26px!important;
+                line-height: 26px!important;
+            }
+            .ant-tabs-ink-bar {
+                display: none!important;
+            }
+        }
+        .quant-login-submit {
+            margin-top: 6px;
+            height: 50px;
+            border-radius: 0px;
+        }
+    }
+    
+    
+    .qdp-login-icon {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.2);
+        margin-left: 16px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: color 0.3s;
+        &:hover {
+            color: @primary-color;
+        }
+    }
+    .qdp-login-other {
+        text-align: left;
+        margin-top: -14px;
+        line-height: 14px;
+        .qdp-login-register {
+            float: left;
+        }
+    }
+}
+}

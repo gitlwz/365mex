@@ -1,0 +1,85 @@
+.userOrder {
+    // .ant-table-tbody>tr:nth-child(odd) {
+    //     background-color: rgba(195, 195, 195, 0.25);
+    // }
+    .ant-table-placeholder{
+        background: @layout-header-background;
+        color: @text-color_copy;
+        .ant-empty-image{
+            display: none;
+        }
+    }
+    height: 100%;
+    .orderList{
+        .ant-table-scroll{
+            overflow: unset;
+            .ant-table-body{
+                color: @text-color_copy;
+                // overflow-y: hidden;
+                overflow-x: initial !important;
+            }
+        }
+
+    }
+    .ant-table-tbody > tr > td{
+        transition:none;
+    }
+    .red {
+        color: #ae543b;
+    }
+    .green {
+        color: #3e8654;
+    }
+    .ant-btn-sm {
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .symbol_position {
+        color: @symbol_title_color;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    .symbol_position_tit {
+        font-weight: 700;
+    }
+    .borderRed {
+        border-left: 6px solid #e8704f;
+    }
+    .borderGreen {
+        border-left: 6px solid #52b370;
+    }
+    .borderRedR {
+        border-right: 6px solid #e8704f !important;
+    }
+    .borderGreenR {
+        border-right: 6px solid #52b370 !important;
+    }
+    .borderRed_title {
+        padding-left: 2px;
+        border-left: 6px solid #f6c6b9;
+    }
+    .borderGreen_title {
+        padding-left: 2px;
+        border-left: 6px solid #bae1c6;
+    }
+    .borderRed_titleR {
+        padding-right: 2px;
+        border-right: 6px solid #f6c6b9;
+    }
+    .borderGreen_titleR {
+        padding-right: 2px;
+        border-right: 6px solid #bae1c6;
+    }
+    .ordercommitClassName{
+        animation: myfirst 1s;
+    }
+}
+.userOrder >div:first-child{
+    height: 100%;
+}
+@keyframes myfirst {
+    0% {
+        opacity: 0.5;
+    }
+}

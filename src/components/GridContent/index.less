@@ -1,0 +1,152 @@
+.quant-react-grid-buttons-dashed {
+    float: right;
+    line-height: 24px;
+
+    .ant-btn-dashed {
+        height: 24px;
+    }
+
+    button {
+        margin-right: 6px;
+    }
+}
+
+.quant-react-grid-buttons {
+    position: absolute;
+    right: 73px;
+    top: -35px;
+    z-index: 20;
+}
+
+.orderListSelect {
+    width: 200px;
+    background-color: @layout-header-background;
+    color: @text-color_copy;
+    border: 3px solid @transaction_back;
+    .input_combine {
+        border: none;
+        padding: 0 5px;
+        background-color: #C7D9EC;
+        color: #000000;
+        height: 26px;
+        line-height: 26px;
+        width: 80px;
+    }
+    .radio_color{
+        color: @text-color_copy;
+    }
+    .title {
+        border-bottom: 1px solid @transaction_back;
+        padding: 5px 10px;
+    }
+
+    .combine {
+        cursor: help;
+        color: @text-color_copy;
+        border-radius: 0px;
+        border-bottom: 1px dotted @text-color_copy;
+    }
+
+    div {
+        margin-bottom: 5px;
+    }
+
+    .button {
+        margin: 0 2px;
+        width: 40px;
+        display: inline-block;
+        margin-bottom: 0px;
+        border: none;
+        font-weight: 300;
+        text-align: center;
+        cursor: pointer;
+        text-shadow: none;
+        user-select: none;
+        height: 26px;
+    }
+
+    .btn-danger {
+        color: rgb(255, 255, 255);
+        background-color: rgb(232, 112, 79);
+    }
+
+    .btn-danger:hover {
+        background-color: rgb(226, 75, 34);
+    }
+
+    .btn-success {
+        color: rgb(255, 255, 255);
+        background-color: rgb(82, 179, 112);
+    }
+
+    .btn-success:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(64, 146, 89);
+    }
+}
+
+.quant-gridcard {
+    user-select: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    background: @layout-header-background;
+    overflow: hidden;
+
+    .quant-gridcard-dragHandle {
+        padding-left: 0px;
+        padding-right: 14px;
+        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.06);
+        height: 40px;
+        line-height: 40px;
+        font-weight: unset;
+        border-bottom: 1px solid @transaction_back;
+        display: flex;
+        .ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu{
+            border-bottom: none;
+            background-color: @top-index-background-new;
+            border-right: 1px solid @transaction_back;
+        }
+        .ant-menu-horizontal>.ant-menu-item:hover,
+        .ant-menu-horizontal>.ant-menu-submenu:hover,
+        .ant-menu-horizontal>.ant-menu-item-active,
+        .ant-menu-horizontal>.ant-menu-submenu-active,
+        .ant-menu-horizontal>.ant-menu-item-open,
+        .ant-menu-horizontal>.ant-menu-submenu-open,
+        .ant-menu-horizontal>.ant-menu-item-selected,
+        .ant-menu-horizontal>.ant-menu-submenu-selected {
+            // border-bottom: 1px solid @layout-header-background;
+            background-color: @layout-header-background;
+        }
+        .quant-gridcard-title {
+            cursor: move;
+            color: @text-color_copy;
+            flex: 1 1 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .quant-gridcard-title-ummove {
+            flex: 1 1 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .quant-gridcard-controls {
+            min-width: 78px;
+            padding-left: 0px;
+            display: flex;
+            align-items: center;
+            align-self: center;
+        }
+    }
+
+    .quant-gridcard-content {
+        height: calc(~"100% - 40px");
+        overflow: hidden;
+        overflow-y: auto;
+        width: 100%;
+    }
+}

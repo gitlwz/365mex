@@ -1,0 +1,55 @@
+.perpetual {
+    height: 100%;
+    background-color: @layout-header-background;
+    padding: 5px;
+
+    .product {
+        padding: 0 10px;
+
+        table {
+            background-color: @layout-header-background;
+            border-radius: 6px;
+            table-layout: automatic;
+            border-collapse: collapse;
+            border: 0px solid;
+            width: 100%;
+            overflow: scroll;
+            text-align: right;
+            font-size: 12px;
+
+            th {
+                padding: 0 5px;
+                border: 0px;
+            }
+            tr{
+                height: 32px;
+            }
+            tbody tr {
+                background-color: @table_row_back;
+                border-bottom: 1px solid @layout-header-background;
+            }
+            // tr:hover {
+            //     background: rgba(16, 19, 17, 0.3);
+            // }
+
+            td {
+                padding: 0 5px;
+                border: 0px;
+                white-space: nowrap;
+                word-break: normal;
+            }
+
+            .red {
+                color: #ae543b;
+            }
+
+            .green {
+                color: #3e8654;
+            }
+
+            .light {
+                animation: recentTrade-myfirst 0.8s;
+            }
+        }
+    }
+}

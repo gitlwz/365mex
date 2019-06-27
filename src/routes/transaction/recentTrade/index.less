@@ -1,0 +1,56 @@
+.recentTrade {
+    height: 100%;
+    padding: 5px;
+    table {
+        background-color: @layout-header-background;
+        border-radius: 6px;
+        table-layout: fixed;
+        border-collapse: collapse;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        text-align: right;
+        font-size: 12px;
+        .recentTrade-thead {
+            th {
+                color: #ccc;
+                padding-right: 5px;
+            }
+            th {
+                border: none;
+            }
+        }
+        tr:hover {
+            background: @orderlist_hover_bar;
+        }
+        td{
+            padding-right: 6px;
+            border: none;
+            white-space: nowrap;
+            word-break: normal;
+        }
+        td:last-child{
+            width: 10%;
+        }
+        .red{
+            color: @sell-order-color;
+        }
+        .green{
+            color: @buy-order-color;
+        }
+        .light{
+            animation: recentTrade-myfirst 0.8s;
+        }
+    }
+}
+.SpinStyle{
+    .ant-spin-spinning{
+        position: fixed;
+        margin-top: 50px;
+    }
+}
+@keyframes recentTrade-myfirst {
+    0% {
+        background: rgba(173, 169, 104, 0.4);
+    }
+}

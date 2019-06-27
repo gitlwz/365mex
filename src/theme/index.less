@@ -1,0 +1,317 @@
+@import "../components/SiderMenu/index.less";
+@import "../components/GlobalHeader/index.less";
+@import "../routes/User/Login.less";
+@import "../layouts/UserLayout.less";
+@import "../layouts/PageHeaderLayout.less";
+@import "../components/TopNavHeader/index.less";
+@import "../routes/User/Register.less";
+@import "../components/GridContent/index.less";
+@import "../routes/transaction/leftSider/orderCommit/index.less";
+@import "../routes/transaction/leftSider/positionHold/index.less";
+@import "../routes/transaction/leftSider/instrumentDetal/index.less";
+@import "../routes/transaction/leftSider/index.less";
+@import "../routes/transaction/orderList/index.less";
+@import "../routes/transaction/userOrder/index.less";
+@import "../routes/transaction/index.less";
+@import "../routes/transaction/totalRight/index.less";
+@import "../routes/transaction/depthchart/index.less";
+@import "../routes/transaction/recentTrade/index.less";
+@import "../routes/transaction/orderListSecond/index.less";
+@import "../routes/transaction/unLogin/index.less";
+@import "../routes/transaction/commodityIndex/index.less";
+@import "../routes/account/account/capital/index.less";
+@font-family:"Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+@primary-color:#5D97FF;
+// @text-color:#333333;
+@text-color_copy:#333333;
+@indicative_settle_price:rgba(0, 0, 0, 0.4);//指数价格颜色
+@orderlist_title_color:#333333;//委托列表标题颜色
+@light_status_back:rgba(82, 179, 112, 0.1);//指示灯背景颜色
+@light_status_color:#52b370;//指示灯亮起颜色
+@buy-order-color:#24B36B;//买按钮颜色
+@sell-order-color:#e34e4d;//卖按钮颜色
+@buy-order-bar-color:#bde8d2;//买条颜色
+@sell-order-bar-color:#f7cac9;//卖条颜色
+@orderlist_hover_bar:rgba(255, 255, 255, 0.1);
+@symbol_title_color:#FBCB6F;
+@left_title_color:#ffffff;
+@calculate_title_color:#333333;
+
+@text-color-mark:rgba(55, 71, 79, 1);
+@margin_last_text:rgba(51,51,51);
+@layout-header-background:rgba(255,255,255,1);
+@top-head-color:#2B4159;//顶部背景颜色
+@top-font-color:#FFFFFF;//顶部字体颜色
+@top-index-background:#3B526A;//顶部指数背景颜色(现换成灰色)
+@top-index-background-new:#eee;//顶部指数背景颜色(真正的顶部颜色)
+@close-price-background:#4e88f0;//平仓按钮颜色
+@menu-dark-arrow-color:#333333;
+@order_alert_comfir_leverage_bak:#EFF4FE;
+@order_alert_comfir_slider_bak:#DDE1EB;
+@order_alert_comfir_table_bak:#F9F9F9;
+@order_alert_comfir_table_color:#999999;
+@upper_price_color:#26bf72;
+@liq-mark-color:#a48c42;
+@lower_price_color:#f46b57;
+@total-order-color:#e8e8e8;
+@transaction_back:#C7D9EC;
+@calulate_table_back:#f6f7f8;
+@calulate_table_border:#d0d5db;
+@calulate_table_bottomBar:#627588;
+@order_type_back:#ffffff;
+@input_border:rgba(78, 136, 240, 0.1);
+@input_left_label:rgba(101,154,234,0.1);
+@table_row_back:rgba(78,136,240,0.06);
+.ant-empty-normal{
+    margin: 0;
+}
+.ant-tooltip-inner{
+    background: rgba(0, 0, 0);;
+}
+//加减颜色
+.buttom_size{
+    border-radius: 0;
+    height: 24px;
+    width: 60px;
+    font-size: 12px;
+}
+.button_cancel{
+    border: 0;
+    color:@text-color_copy;
+    background-color:@sell-order-color;
+}
+.body{
+    font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.green{
+    color: #3e8654;
+}
+.global-spin {
+    width: 100%;
+    margin: 40px 0 !important;
+}
+
+//立体动画
+.hover-shadow {
+    transition: all .3s;
+}
+
+.hover-shadow:hover {
+    box-shadow:2px 2px 10px 4px rgba(0, 0, 0, 0.15);
+}
+
+//end
+//滚动条样式
+/* 设置滚动条的样式 */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    // visibility: hidden;
+}
+::-webkit-scrollbar:vertical {
+    width: 10px;
+    height: 10px;
+    // visibility: hidden;
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    display: block;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+::-webkit-scrollbar-button:start {
+    width: 10px;
+    height: 10px;
+    background: none;
+}
+
+::-webkit-scrollbar-button:start:hover {
+    background: none;
+}
+
+::-webkit-scrollbar-button:start:active {
+    background: none;
+}
+
+::-webkit-scrollbar-button:end {
+    width: 10px;
+    height: 10px;
+    background: none;
+}
+
+::-webkit-scrollbar-button:end:hover {
+    background: none;
+}
+
+::-webkit-scrollbar-button:end:active {
+    background: none;
+}
+.button-color-daybreak {
+    background-color: @close-price-background;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: @close-price-background;
+        color: #f0f0f0;
+        border-color: rgba(0, 0, 0, 0.15);
+    }
+
+    &:active,
+    &.active {
+        background-color: @close-price-background;
+        color: #f0f0f0;
+        border-color: rgba(0, 0, 0, 0.15);
+    }
+}
+.all-icon-img{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: 530px 18px;
+    background-image: url(../assets/allIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+.check-icon-img{
+    width: 43px;
+    height: 12px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    background-image: url(../assets/checkIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+.check-icon-img.close{
+    background-position: 6px 0;
+}
+.check-icon-img.check{
+    background-position: -24px 0;
+}
+.check-icon-img.orderClose{
+    background-position: -114px 0;
+    width: 60px; 
+    background-color: @table_row_back;
+}
+.check-icon-img.orderCheck{
+    background-position: -52px 0;
+    width: 60px; 
+    background-color: @table_row_back;
+}
+.all-icon-img.cal{
+    background-position:-180px 0;
+    width: 18px;
+    height: 18px;
+}
+.all-icon-img.set{
+    background-position: -204px 0;
+    width: 18px;
+    height: 18px;
+}
+.all-icon-img.setBac{
+    background-position:-447px 0;
+    width: 22px;
+    height: 20px;
+}
+.all-icon-img.close{
+    background-position: -512px 0;
+    width: 20px;
+    height: 20px;
+}
+.all-icon-img.earth{
+    background-position: 4px 0;
+    width: 18px;
+    height: 22px;
+}
+.all-icon-img.earthMark{
+    background-position: -13px 0;
+    width: 18px;
+    height: 22px;
+}
+.all-icon-img.earthBac{
+    background-position: -204px 0;
+    width: 18px;
+    height: 20px;
+}
+.all-icon-img.user{
+    background-position: -90px 0;
+    width: 18px;
+    height: 26px;
+}
+.all-icon-img.full{
+    background-position: -472px 0;
+    margin-left: 8px;
+    width: 18px;
+    height: 20px;
+}
+.all-icon-img.small{
+    background-position: -493px 0;
+    width: 18px;
+    height: 20px;
+}
+.all-icon-img.fullWin{
+    background-position: -133px 0;
+    margin-left: 2px;
+    width: 20px;
+    height: 18px;
+}
+.all-icon-img.smallWin{
+    background-position: -156px 0;
+    width: 20px;
+    height: 18px;
+}
+.all-icon-img.write{
+    background-position: -374px 0;
+    height: 20px;
+}
+.all-icon-img.fix{
+    background-position: -66px 0;
+    height: 20px;
+}
+.all-icon-img.fun{
+    background-position: -34px 0;
+    height: 22px;
+}
+.all-icon-img.vol{
+    background-position: -48px 0;
+    height: 22px;
+}
+.all-icon-img.clock{
+    background-position: -117px 0;
+    height: 20px;
+}
+

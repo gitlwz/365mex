@@ -1,0 +1,71 @@
+.transaction {
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .red{
+        color: #d16547;
+    }
+    .green{
+        color: #4aa165;
+    }
+    .slide {
+        margin-top: 5px;
+        width: 260px !important;
+        min-width: 260px !important;
+        max-width: 260px !important;
+        min-height: calc(100vh - 64px);
+        left: 0;
+    }
+    .transaction_tabs {
+        padding: 5px;
+        margin: 5px 10px;
+        background: #eee;
+        .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+            width: 90px;
+            padding: 0;
+        }
+        .ant-tabs-bar {
+            margin: 0;
+        }
+    }
+    .transaction_ul {
+        height: 30px;
+        background: white;
+        li {
+            margin: 3px 5px;
+            padding: 0 5px;
+            float: left;
+            a {
+                color: black;
+            }
+        }
+        .select {
+            border: 1px solid #c5c5c5;
+            border-radius: 1px;
+        }
+        li:hover {
+            text-decoration: underline;
+        }
+    }
+    .titleName {
+        position: relative;
+        top: -5px;
+    }
+    .titlePrice {
+        font-size: 12px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        .titlePrice_left{
+            font-style: italic;
+        }
+        .titlePrice_right{
+            font-weight: 600;
+            position: relative;
+            left: 5px;
+        }
+    }
+}

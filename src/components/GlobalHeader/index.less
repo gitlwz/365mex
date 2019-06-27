@@ -1,0 +1,299 @@
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-item-active,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: @top-head-color;
+}
+
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item>a {
+    color: @top-font-color
+}
+
+.ant-menu-dark .ant-menu-item:hover>a,
+.ant-menu-dark .ant-menu-item-active>a,
+.ant-menu-dark .ant-menu-submenu-active>a,
+.ant-menu-dark .ant-menu-submenu-open>a,
+.ant-menu-dark .ant-menu-submenu-selected>a,
+.ant-menu-dark .ant-menu-submenu-title:hover>a {
+    color: @primary-color;
+}
+
+.ant-menu-dark .ant-menu-item-selected>a,
+.ant-menu-dark .ant-menu-item-selected>a:hover {
+    color: @primary-color
+}
+
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+    background-color: @top-head-color;
+    color: @top-font-color
+}
+
+.ant-dropdown {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+
+    .ant-dropdown-menu {
+        border-radius: 0;
+        border: 3px solid @transaction_back;
+        background: @top-index-background;
+        padding-bottom: 0;
+        padding-top: 0;
+
+        .ant-dropdown-menu-item {
+            color: @text-color_copy;
+            background-color: @order_type_back;
+            font-size: 12px;
+            border: 1px solid @transaction_back;
+
+            .ant-checkbox-wrapper {
+                color: @text-color_copy;
+            }
+        }
+
+        .ant-dropdown-menu-item>a {
+            color: @text-color_copy;
+        }
+
+        .ant-dropdown-menu-item:hover {
+            background-color: @order_type_back;
+            color: @primary-color
+        }
+
+        .ant-dropdown-menu-item-selected {
+            background-color: @order_type_back;
+            color: @primary-color
+        }
+    }
+}
+
+.china_img {
+    height: 15px;
+    width: 24px;
+    background: url(../../assets/china.png) no-repeat 0 50%;
+    background-size: 24px 15px;
+}
+
+.GlobalHeader.header {
+    overflow: hidden;
+    height: 44px;
+    padding: 0 12px 0 0;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    position: relative;
+
+    .ant-layout {
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        height: 44px;
+        line-height: 58px;
+        vertical-align: top;
+        display: inline-block;
+        padding: 0 0 0 24px;
+        cursor: pointer;
+        font-size: 20px;
+
+        img {
+            display: inline-block;
+            width: 30px;
+            vertical-align: middle;
+        }
+    }
+
+    .menu {
+        .anticon {
+            margin-right: 8px;
+        }
+
+        .ant-dropdown-menu-item {
+            width: 160px;
+        }
+    }
+
+    i.trigger {
+        font-size: 20px;
+        line-height: 44px;
+        cursor: pointer;
+        transition: all 0.3s, padding 0s;
+        padding: 0 24px;
+
+        &:hover {
+            color: @primary-color;
+        }
+    }
+}
+
+.RightContent-right {
+    float: right;
+    height: 100%;
+    color: @top-font-color;
+
+    .show_notice {
+        background-color: @layout-header-background;
+        border: 4px solid @transaction_back;
+        z-index: 10;
+        height: auto;
+        width: 420px;
+        height: auto;
+        right: 50px;
+        top: 50px;
+
+        .show_notice_item {
+            border-bottom: 1px solid @transaction_back;
+            padding: 10px;
+            color: @calculate_title_color;
+            font-size: 12px;
+
+            .show_notice_time {
+                height: 15px;
+                line-height: 15px;
+            }
+
+            .show_notice_title {
+                font-size: 18px;
+                color: @text-color_copy;
+            }
+
+            .show_notice_content {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            .show_notice_bottom {
+                height: 44px;
+                position: relative;
+                .show_notice_bottom_left {
+                    float: left;
+                    display: flex;
+                    flex-direction: column;
+
+                    .show_notice_bottom_left_top {
+                        height: 16px;
+                    }
+
+                    .show_notice_bottom_left_bottom {
+                        height: 21px;
+                    }
+                }
+
+                .show_notice_bottom_right {
+                    position: absolute;
+                    right: 2px;
+                    bottom: -18px;
+                }
+            }
+        }
+    }
+
+    .topTotalAvali {
+        font-size: 13px;
+        display: flex;
+        height: 40px;
+        float: left;
+        flex-direction: column;
+
+        .avali {
+            height: 20px;
+        }
+
+        .Total {
+            margin-top: -7px;
+            height: 20px;
+        }
+    }
+
+    .action {
+        cursor: pointer;
+        padding: 0 12px;
+        display: inline-block;
+        transition: all 0.3s;
+        height: 100%;
+
+        >i {
+            font-size: 16px;
+            color: @top-font-color;
+        }
+
+        &:hover,
+        & .ant-popover-open {
+            color: @top-font-color;
+        }
+    }
+
+    .search {
+        padding: 0;
+        margin: 0 12px;
+
+        &:hover {
+            color: @primary-color;
+        }
+    }
+
+    .account {
+        .avatar {
+            margin: 18px 8px 20px 0;
+            vertical-align: middle;
+        }
+    }
+
+    .language-icon {
+        cursor: pointer;
+        height: 100%;
+        padding: 0 12px;
+        display: inline-block;
+        transition: all 0.3s;
+        font-size: 14px;
+
+        &:hover {
+            color: @primary-color;
+        }
+    }
+
+    .colormenu {
+        padding: 0 12px;
+        display: inline-block;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            color: @primary-color;
+        }
+    }
+
+    .screenFull {
+        display: inline-block;
+        padding: 0 12px 0 0;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            color: @primary-color;
+        }
+    }
+}
+
+@media only screen and (max-width: @screen-md) {
+    .GlobalHeader.header {
+        .ant-divider-vertical {
+            vertical-align: unset;
+        }
+
+        .name {
+            display: none;
+        }
+
+        i.trigger {
+            padding: 0 12px;
+        }
+
+        .logo {
+            padding-right: 12px;
+            position: relative;
+        }
+    }
+}

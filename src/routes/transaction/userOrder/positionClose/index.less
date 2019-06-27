@@ -1,0 +1,53 @@
+.positionClose{
+    padding: 5px 10px;
+    .red{
+        color: #ae543b;
+    }
+    .green{
+        color: #3e8654;
+    }
+    .up {
+        animation: myfirst 0.8s;
+    }
+    .down {
+        animation: mysecond 0.8s;
+    }
+    .select{
+        color: #a48c42;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    .unselect:hover{
+        cursor: pointer;
+    }
+    .ant-table-thead>tr>th .ant-table-column-sorter {
+        right: -15px;
+        z-index: 1100;
+        visibility: hidden;
+    }
+    .ant-table-thead>tr>th:last-child .ant-table-column-sorter {
+        right: 70px;
+        z-index: 1100;
+    }
+    .ant-table-thead>tr>th:first-child .ant-table-column-sorter {
+        left: 30px;
+        z-index: 1100;
+    }
+    .ant-table-column-has-sorters:hover .ant-table-column-sorter{
+        visibility: visible;
+    }
+    .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th {
+        border-bottom: none !important;
+    }
+}
+@keyframes myfirst {
+    0% {
+        background: rgba(232, 112, 79, 0.4);
+    }
+}
+
+@keyframes mysecond {
+    0% {
+        background: rgba(82, 179, 112, 0.4);
+    }
+}

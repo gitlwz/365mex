@@ -1,0 +1,118 @@
+.positionHold {
+    padding: 0 5px;
+    height: 100%;
+    color: @top-font-color;
+    font-size: 12px;
+    .ant-slider-mark {
+        font-size: 12px;
+        font-family:"Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-weight:400;
+        color:rgba(55,71,79,0.6);
+        .ant-slider-mark-text {
+            color: @top-font-color;
+            opacity: 0.6;
+        }
+    
+        .ant-slider-mark-text-active {
+            text-decoration: underline;
+            font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-weight: bold;
+            color: @top-font-color;
+            opacity: 1;
+        }
+    }
+    .row {
+        height: 32px;
+        line-height: 32px;
+    }
+    .radio {
+        .numberStyle {
+            margin-bottom: 5px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .fontPosH {
+            color: #88c99c;
+        }
+        .fontPosL {
+            color: #e5a999;
+        }
+    }
+    .positionRow {
+        padding-right: 4px;
+        margin-bottom: 5px;
+        .lableColor{
+            color:@left_title_color;
+        }
+    }
+    .moveModal_commit {
+        .limitTitle {
+            font-size: 12px;
+        }
+    }
+}
+.positionLeverage {
+    margin: 5px 10px 5px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    .initialLeverageIcon {
+        height: 12px;
+        width: 12px;
+        cursor: help;
+        font-size: 13px;
+        position: absolute;
+        -webkit-transition: opacity 0.5s ease-in-out 0s;
+        transition: opacity 0.5s ease-in-out 0s;
+        top: 7px;
+        left: 4px;
+    }
+    .indicatorGraph {
+        display: inline-block;
+        height: 30px;
+        width: 100%;
+        margin: auto;
+        background-image: -webkit-gradient(linear, left top, right top, from(#52b370), to(#e8704f));
+        background-image: linear-gradient(to right, #52b370, #e8704f);
+        .lineIndicator {
+            left: 5%;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: white;
+            position: relative;
+            .valueLabel {
+                width: 70px;
+                position: relative;
+                top: 4px;
+                left: 10px;
+                font-weight: bold;
+                display: inline-block;
+                transition: left 0.8s cubic-bezier(0.69, 2, 0.7, 0.78) 0s;
+            }
+        }
+    }
+    .indicatorLabel {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 18px;
+        opacity: 0.6;
+        text-shadow: 1px 1px 1px black;
+        pointer-events: none;
+    }
+    .maintLeverageIcon {
+        cursor: help;
+        font-size: 13px;
+        position: absolute;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+        top: 5px;
+        right: 7px;
+    }
+}

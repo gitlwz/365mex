@@ -1,0 +1,446 @@
+.arrow-down {
+    color: @sell-order-color;
+}
+
+.arrow-up {
+    color: @buy-order-color;
+}
+
+.arrow-yellow {
+    color: @liq-mark-color;
+}
+
+.caret-down {
+    color: @sell-order-color;
+    opacity: 0.8;
+}
+
+.caret-up {
+    color: @buy-order-color;
+    opacity: 0.8;
+}
+
+.ant-layout-sider-children {
+    background-color: @transaction_back;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow {
+    top: 46%;
+    left: 10px;
+}
+
+.calculateTitle {
+    position: absolute;
+    z-index: 9999;
+    border: 4px solid @transaction_back;
+    background-color: @layout-header-background;
+    top: 93px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+    left: 207px;
+
+    .ant-tabs-bar {
+        // border-bottom: none;
+        border-bottom: 1px solid @transaction_back;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+        background-color: @layout-header-background  !important;
+        padding-bottom: 2px;
+        // border-bottom: 1px solid #23303B !important;
+        // padding-bottom: 1px;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+        background-color: @top-index-background-new;
+        color: @text-color_copy;
+        border-radius: 0;
+        border: none;
+        border-right: 1px solid @transaction_back;
+        margin-right: 0;
+    }
+
+    .leftSideStyle {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab {
+        margin: 0;
+        text-align: center;
+        width: 94px;
+    }
+
+    .ant-tabs-nav-wrap {
+        padding: 0 20px 0 0;
+    }
+}
+
+.rightSideStyle {
+    left: -440px;
+}
+.leverage {
+    margin: 10px 5px 10px 0;
+    height: 24px;
+    line-height: 24px;
+
+    .leverage_label {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .levetage_option {
+        float: right;
+
+        .levetage_input {
+            text-align: right;
+            width: 100px;
+            margin-right: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: right;
+            padding: 5px;
+            margin-right: 5px;
+            height: 25px;
+            color: #333333;
+            border: none;
+        }
+        .levetage_button {
+            padding: 0;
+            width: 24px;
+            margin-right: 5px;
+        }
+    }
+
+}
+.leftSider {
+    display: flex;
+    flex-direction: column;
+    background-color: @transaction_back;
+    width: 100%;
+    height: 100%;
+
+    .ant-tabs {
+        color: @top-font-color;
+    }
+
+
+    .ant-input-number {
+        border: 1px solid @top-head-color;
+    }
+
+    .ant-input-group-addon {
+        font-size: 12px;
+        color: @top-font-color;
+        border: none;
+        background-color: @top-head-color;
+    }
+
+    // .calculateImg {
+    //     height: 20px;
+    //     width: 20px;
+    //     background: url(../../../assets/calculate.png) no-repeat 0 50%;
+    //     background-size: 20px 20px;
+    // }
+    .ant-collapse-item {
+        color: @top-font-color;
+        border-bottom: 1px solid @transaction_back;
+
+        .ant-collapse-header {
+            background: @top-head-color;
+            height: 40px;
+            font-size: 12px;
+            padding: 7px 0 5px 30px;
+            color: @top-font-color;
+        }
+
+        .ant-collapse-content {
+            color: @top-font-color;
+        }
+
+        .ant-collapse-content-box {
+            background-color: @top-index-background;
+            padding: 0 5px;
+        }
+    }
+
+    .ant-card:last-child {
+        flex: 1;
+        background: @top-index-background;
+    }
+
+}
+
+.widget-footer {
+    background: @calulate_table_bottomBar;
+    color: @top-font-color;
+    border-top: 1px solid @transaction_back;
+    padding: 3px 20px;
+}
+
+.ant-popover-inner-content {
+    padding: 0;
+
+    .ant-popover-message {
+        padding: 0;
+    }
+}
+
+.calculate {
+    padding: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    color: @text-color_copy;
+    .input_qty {
+        // background: @top-head-color;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: right;
+        width: 120px;
+        padding: 5px;
+        padding-right: 35px;
+        margin-right: 1px;
+        height: 30px;
+        float: right;
+        color: #333333;
+        border: none;
+    }
+
+    .input_qty_text {
+        z-index: 10;
+        position: absolute;
+        color: black;
+        right: 5px;
+        top: 7px;
+    }
+    .calculateLabelColor {
+        color: @calculate_title_color;
+    }
+
+    .underLineText {
+        text-decoration: underline;
+    }
+    .green{
+        color: #24B36B;
+    }
+    .red{
+        color: #e34e4d;
+    }
+    .underLineTextH {
+        cursor: pointer;
+    }
+
+    .underLineTextH:hover {
+        text-decoration: underline;
+    }
+
+    .calculateLeftLabel {
+        text-align: right;
+        color: @calculate_title_color;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .calculateSwitchLabel {
+        text-align: right;
+    }
+
+    .calculateTable {
+        background: @calulate_table_back;
+        border: 1px solid @calulate_table_border;
+        padding: 0px 10px;
+
+        table {
+            width: 100%;
+
+            tbody tr {
+                height: 24px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .ant-switch-checked {
+        background-color: @sell-order-color  !important;
+    }
+
+    .ant-switch-small {
+        background-color: @buy-order-color;
+    }
+}
+
+.ant-popover-message-title {
+    padding: 0;
+}
+
+.ant-popover-buttons {
+    display: none;
+}
+
+.levetage_cancel {
+    margin-right: 5px;
+    color: @layout-header-background;
+    background-color: @sell-order-color;
+    border: none;
+    // opacity: 0.2;
+}
+
+.levetage_cancel:hover {
+    color: @layout-header-background;
+    background-color: @sell-order-color;
+    // opacity: 0.2;
+}
+
+.levetage_ok {
+    border: none;
+    color: @layout-header-background;
+    background-color: @buy-order-color;
+}
+
+.levetage_ok:hover {
+    color: @layout-header-background;
+    background-color: @buy-order-color;
+}
+
+.titleSetting {
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: @top-font-color;
+
+    .settingClass {
+        width: 200px;
+    }
+
+    .setting {
+        position: absolute;
+        right: 30px;
+        top: 3px;
+        font-size: 18px;
+        height: 30px;
+        text-align: center;
+        width: 30px;
+    }
+
+    .settingSecond {
+        position: absolute;
+        right: 10px;
+        top: 9px;
+        font-size: 18px;
+    }
+
+    .setting:hover {
+        cursor: pointer;
+        color: cadetblue;
+    }
+
+    .settingSecond:hover {
+        cursor: pointer;
+        color: cadetblue;
+    }
+}
+
+.dropdown-title {
+    background: #eee;
+    border-bottom: 1px solid #999;
+    padding: 5px 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.optionsSection {
+    height: 30px;
+    font-size: 14px;
+    // margin: 5px 0 10px;
+    // text-align: center;
+
+    .optionLabel {
+        color: #ffffff
+    }
+
+    // .Icon_select {
+    //     font-size: 20px;
+    //     height: 20px;
+    //     line-height: 20px;
+    //     padding-right: 10px;
+    //     border-right: 1px solid;
+    //     position: absolute;
+    //     left: 10px;
+    // }
+
+    // .calculate_span {
+    //     padding-left: 3.0769230769rem;
+    //     position: relative;
+    //     font-weight: 500;
+    //     font-size: 12px !important;
+    //     display: block;
+    //     width: 100%;
+    //     padding-right: 0;
+    //     text-align: center;
+    //     vertical-align: middle;
+    //     cursor: pointer;
+    //     border: 1px solid transparent;
+    //     white-space: nowrap;
+    //     padding: .3076923077rem .9230769231rem;
+    //     font-size: 1rem;
+    //     line-height: 1.428571429;
+    //     border-radius: .0769230769rem;
+    // }
+}
+
+.ant-slider-with-marks {
+    margin-top: 5px;
+}
+
+
+.leftSider_card {
+    border-bottom: 1px solid @transaction_back;
+    color: @top-font-color;
+    background-color: @top-index-background;
+
+    .ant-card-head {
+        background: @top-head-color;
+        border-bottom: 2px solid @transaction_back;
+        min-height: 40px;
+        padding: 0 5px;
+        border-radius: 0;
+
+        .ant-card-head-wrapper {
+            height: 40px;
+        }
+    }
+
+    .ant-card-head-title {
+        padding: 5px 0;
+    }
+
+    .ant-card-body {
+        background-color: @top-index-background;
+        padding: 5px;
+    }
+}
+
+.loginBack {
+    border: none;
+    color: #ffffff;
+    background-color: @buy-order-color;
+}
+
+.loginOutBack {
+    border: none;
+    color: #ffffff;
+    background-color: @sell-order-color;
+}
+
+.loginBack:hover {
+    color: #ffffff;
+    background-color: @buy-order-color;
+}
+
+.loginOutBack:hover {
+    color: #ffffff;
+    background-color: @sell-order-color;
+}

@@ -1,0 +1,235 @@
+.orderList {
+    height: 100%;
+    overflow-y: hidden;
+    padding: 5px 0px;
+    margin: 0 10px;
+    .orderList_table_show{
+        height: calc(100% - 35px);
+        overflow: auto;
+        .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+            border:1px solid @transaction_back;
+            padding-right: 3px;
+        }
+        .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td:last-child{
+            border-right: none;
+        }
+        .ant-table-thead{
+            visibility: collapse;
+        }
+    }
+    .orderList_table_position{
+        .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+            border:1px solid @transaction_back;
+            padding-right: 3px;
+        }
+        .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td:last-child{
+            border-right: none;
+        }
+    }
+    .orderList_table_hide{
+        overflow: hidden;
+        height: 35px;
+        margin-right: 10px;
+        .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+            padding-right: 3px;
+        }
+        .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > td{
+            padding-right: 3px;
+        }
+        .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td:last-child{
+            border-right: none;
+        }
+        .ant-table-tbody{
+            visibility: collapse;
+        }
+    }
+    .number_button{
+        padding: 0 !important;
+        width: 24px;
+        margin-right: 5px;
+    }
+    .show_input_price{
+        width: 70px;
+        height: 22px;
+        padding: 0 3px;
+        margin-right: 5px;
+        border: 1px solid rgba(78,136,240,0.2);
+        color: #333333;
+    }
+    .lastPriceWidget{
+        padding: 5px 0;
+    }
+    .headPrice {
+        font-size: 19px;
+        text-align: center;
+        font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-weight: bold;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    .limits {
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        .indicativeSettlePrice {
+            padding: 2px;
+
+            i {
+                font-style: normal;
+            }
+
+            color: @indicative_settle_price;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .indicativeSettlePrice:hover {
+            background: rgba(82, 179, 112, 0.25)
+        }
+
+        .fairPrice {
+            a {
+                padding: 2px;
+                color: @text-color_copy;
+                margin-left: 3px;
+            }
+
+            a:hover {
+                background: rgba(82, 179, 112, 0.25)
+            }
+
+            cursor: pointer;
+        }
+    }
+
+    .positionSetting {
+        padding: 15px 20px;
+
+        .position {
+            margin-right: 20px;
+        }
+    }
+
+    .table-container-inner {
+        overflow: hidden;
+        padding: 1px 12px;
+        .box_red {
+            box-shadow: inset rgba(82, 179, 112, 0.3) 3px 3px 0px;
+        }
+
+        .box_green {
+            box-shadow: inset rgba(232, 112, 79, 0.4) 3px 3px 0px;
+        }
+
+        table {
+            border-radius: 6px;
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: auto;
+
+            th {
+                width: 26px;
+                height: 12px;
+                font-size: 12px;
+                font-family: "Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+                font-weight: bold;
+                color: @orderlist_title_color;
+            }
+
+            th,
+            td {
+                height: 18px;
+                white-space: nowrap;
+                width: 33.3333333333%;
+                text-align: right;
+                word-break: normal;
+            }
+
+            tbody {
+                tr:hover {
+                    background: @orderlist_hover_bar;
+                }
+
+                .hover-green:hover {
+                    background: @orderlist_hover_bar;
+                }
+
+                .liquidation {
+                    color: #e8704f;
+                    font-weight: bold;
+                    border-bottom: 1px dotted;
+                }
+
+                td {
+                    font-size: 12px;
+
+                    >div {
+                        z-index: 10;
+                        position: relative;
+                        height: 15px;
+                        line-height: 16px;
+                    }
+                }
+
+                .output {
+                    position: relative;
+                }
+
+                .price {
+                    text-align: left;
+                    color: @sell-order-color;
+                }
+
+                .price.green {
+                    color: @buy-order-color;
+                }
+
+                .depthBar {
+                    background-color: @sell-order-bar-color;
+                    mix-blend-mode: multiply;
+                    top: 0;
+                    bottom: 0;
+                    position: absolute;
+                }
+
+                .depthBar.depthBar-green {
+                    background-color: @buy-order-bar-color;
+                }
+            }
+        }
+
+        // tbody>tr:nth-child(odd)>td {
+        //     background-color: @table_row_back;
+        // }
+
+        .up {
+            animation: myfirst 0.8s;
+        }
+
+        .down {
+            animation: mysecond 0.8s;
+        }
+
+        .selt_order {
+            color: #a48c42;
+            font-weight: 700;
+            border-bottom: 0;
+        }
+    }
+}
+
+@keyframes myfirst {
+    0% {
+        background: rgba(232, 112, 79, 0.4);
+    }
+}
+
+@keyframes mysecond {
+    0% {
+        background: rgba(82, 179, 112, 0.4);
+    }
+}

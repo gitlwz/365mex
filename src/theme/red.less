@@ -1,0 +1,396 @@
+@import "~quant-ui/lib/theme/index.less";
+@import "./index.less";
+// @text-color:#ffffff;
+@text-color_copy: #ffffff;
+@transaction_back: #000000;
+@indicative_settle_price: #59768C; //指数价格颜色
+@top-head-color: #23303B; //顶部背景颜色
+@primary-color: #5D97FF;
+@text-color-mark: #59768C;
+@margin_last_text: #ffffff;
+@layout-header-background: #23303B; //拖拽标题颜色
+@orderlist_title_color: #566C7D; //委托列表标题颜色
+@light_status_back: #324756; //指示灯背景颜色
+@light_status_color: #24b36b; //指示灯亮起颜色
+@buy-order-color: #24B36B; //买按钮颜色
+@sell-order-color: #e34e4d; //卖按钮颜色
+@buy-order-bar-color: #234442; //买条颜色
+@sell-order-bar-color: #533840; //卖条颜色
+@orderlist_hover_bar: rgba(255, 255, 255, 0.1);
+@symbol_title_color: #FBCB6F;
+@left_title_color: #65849C; //左侧标题颜色
+@calculate_title_color: #65849C; //左侧标题颜色
+@order_alert_comfir_leverage_bak: #344959;
+@order_alert_comfir_slider_bak: #000000;
+@order_alert_comfir_table_bak: #2c3d4a;
+@order_alert_comfir_table_color: #59768c;
+@calulate_table_back: #23303B;
+@calulate_table_border: #000000;
+@calulate_table_bottomBar: #344959;
+
+
+@top-font-color: #FFFFFF; //顶部字体颜色
+@top-index-background: #23303B; //顶部指数背景颜色(现换成灰色)
+@top-index-background-new: #344959; //顶部指数背景颜色(真正的顶部颜色)
+@close-price-background: #4e88f0; //平仓按钮颜色
+@menu-dark-arrow-color: #333333;
+@upper_price_color: #26bf72;
+@liq-mark-color: #a48c42;
+@lower_price_color: #f46b57;
+@total-order-color: #e8e8e8;
+@order_type_back: #23303B;
+@input_border: rgba(78, 136, 240, 0.1);
+@input_left_label: rgba(101, 154, 234, 0.1);
+@table_row_back: #1F282F;
+
+.ant-btn-group-sm > .ant-btn:first-child:not(:last-child), .ant-btn-group-sm > span:first-child:not(:last-child) > .ant-btn{
+    border-radius:0;
+}
+.ant-btn-group-sm > .ant-btn:last-child:not(:first-child), .ant-btn-group-sm > span:last-child:not(:first-child) > .ant-btn{
+    border-radius:0;
+}
+.ant-popover-arrow {
+    display: none;
+}
+
+.ant-popover-inner {
+    border-radius: 0;
+}
+
+.ant-slider-handle {
+    border: solid 3px #4e88f0;
+}
+
+.button-color-geekblue {
+    //清除颜色
+    background-color: #24B36B;
+    border-color: #24B36B;
+    color: @text-color_copy;
+
+    &:hover,
+    &:focus {
+        background-color: #24B36B;
+        border-color: #24B36B;
+        color: @text-color_copy;
+    }
+
+    &:active,
+    &.active {
+        background-color: #24B36B;
+        border-color: #24B36B;
+        color: @text-color_copy;
+    }
+}
+
+.button-color-dust {
+    background-color: #e34e4d;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+        background-color: #e34e4d;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #e34e4d;
+        border-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+    }
+}
+
+.button-color-volcano {
+    background-color: #DE9C8B;
+    border-color: #B87A72;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #DE9C8B;
+        border-color: #B87A72;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #DE9C8B;
+        border-color: #B87A72;
+        color: #fff;
+    }
+}
+
+.button-color-redP {
+    background-color: #F09685;
+    border-color: #CA6A69;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #F09685;
+        border-color: #CA6A69;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #F09685;
+        border-color: #CA6A69;
+        color: #fff;
+    }
+}
+
+.button-color-greenP {
+    background-color: #5CB579;
+    border-color: #399055;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #5CB579;
+        border-color: #399055;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color: #5CB579;
+        border-color: #399055;
+        color: #fff;
+    }
+}
+
+.button-color-greenS {
+    background-color:#2EA76B;
+    border-color: #2F7B55;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #2EA76B;
+        border-color: #2F7B55;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background-color:#2EA76B;
+        border-color: #2F7B55;
+        color: #fff;
+    }
+}
+
+.fade-enter,
+.fade-appear {
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.fade-leave {
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.fade-enter.fade-enter-active,
+.fade-appear.fade-appear-active {
+    -webkit-animation-name: antFadeIn;
+    animation-name: antFadeIn;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.fade-leave.fade-leave-active {
+    -webkit-animation-name: antFadeOut;
+    animation-name: antFadeOut;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    pointer-events: none;
+}
+
+.fade-enter,
+.fade-appear {
+    opacity: 0;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.fade-leave {
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.zoom-enter,
+.zoom-appear {
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.zoom-leave {
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.zoom-enter.zoom-enter-active,
+.zoom-appear.zoom-appear-active {
+    -webkit-animation-name: antZoomIn;
+    animation-name: antZoomIn;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.zoom-leave.zoom-leave-active {
+    -webkit-animation-name: antZoomOut;
+    animation-name: antZoomOut;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    pointer-events: none;
+}
+
+.zoom-enter,
+.zoom-appear {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+    animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+}
+
+.zoom-leave {
+    -webkit-animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.ant-modal.zoom-enter,
+.ant-modal.zoom-appear {
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(211, 206, 206, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 8px;
+    background-color: rgba(211, 206, 206, .5);
+}
+
+.all-icon-img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: 530px 18px;
+    background-image: url(../assets/allIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+
+.all-icon-img.cal {
+    background-position: -180px 0;
+    width: 18px;
+    height: 18px;
+}
+
+.all-icon-img.set {
+    background-position: -204px 0;
+    width: 18px;
+    height: 18px;
+}
+
+.all-icon-img.setBac {
+    background-position: -286px 0;
+    width: 22px;
+    height: 20px;
+}
+
+.all-icon-img.close {
+    background-position: -352px 0;
+    width: 20px;
+    height: 20px;
+}
+
+.all-icon-img.earth {
+    background-position: 4px 0;
+    width: 18px;
+    height: 22px;
+}
+
+.all-icon-img.earthMark {
+    background-position: -13px 0;
+    width: 18px;
+    height: 22px;
+}
+
+.all-icon-img.earthBac {
+    background-position: -204px 0;
+    width: 18px;
+    height: 20px;
+}
+
+.all-icon-img.user {
+    background-position: -90px 0;
+    width: 18px;
+    height: 21px;
+}
+
+.all-icon-img.full {
+    background-position: -309px 0;
+    margin-left: 8px;
+    width: 18px;
+    height: 20px;
+}
+
+.all-icon-img.small {
+    background-position: -332px 0;
+    width: 18px;
+    height: 20px;
+}
+
+.all-icon-img.fullWin {
+    background-position: -133px 0;
+    margin-left: 2px;
+    width: 20px;
+    height: 18px;
+}
+
+.all-icon-img.smallWin {
+    background-position: -156px 0;
+    width: 20px;
+    height: 18px;
+}
+
+.all-icon-img.write {
+    background-position: -374px 0;
+    height: 20px;
+}
+
+.all-icon-img.clock {
+    background-position: -117px 0;
+    height: 20px;
+}
