@@ -370,17 +370,17 @@ class Index extends Component {
             payload: { symbolCurrent: symbol }
         })
         // if (process.env.NODE_ENV === 'development') {//开发环境
-        //     this.ws = new webSocket("ws://192.168.1.22:9988", null, { breatheParams: "ping", reconnectInterval: 600000, timeoutInterval: 10000, debugger: false });
+        //     this.ws = new webSocket("ws://192.168.100.113:9988", null, { breatheParams: "ping", reconnectInterval: 600000, timeoutInterval: 10000, debugger: false });
         // } else {//部署环境
-        //     this.ws = new webSocket("ws://192.168.1.22:9988", null, { breatheParams: "ping", reconnectInterval: 600000, timeoutInterval: 10000, debugger: false });
+        //     this.ws = new webSocket("ws://192.168.100.113:9988", null, { breatheParams: "ping", reconnectInterval: 600000, timeoutInterval: 10000, debugger: false });
         // }
         if (process.env.NODE_ENV === 'development') {//开发环境
-            this.ws = new webSocket("ws://192.168.1.22:9988", null, { breatheParams: "ping", reconnectInterval: 10000, timeoutInterval: 10000, debugger: false });
+            this.ws = new webSocket("ws://192.168.100.113:9988", null, { breatheParams: "ping", reconnectInterval: 10000, timeoutInterval: 10000, debugger: false });
         } else {//部署环境
-            // this.ws = new webSocket("ws://192.168.1.22:9988", null, { breatheParams: "ping", reconnectInterval: 600000, timeoutInterval: 10000, debugger: false });
-            var ws_url = "ws://192.168.1.22:9988"
-            if (document.location.host.startsWith("192.168.1.22")) {
-                ws_url = "ws://192.168.1.22:9988"
+            // this.ws = new webSocket("ws://192.168.100.113:9988", null, { breatheParams: "ping", reconnectInterval: 600000, timeoutInterval: 10000, debugger: false });
+            var ws_url = "ws://192.168.100.113:9988"
+            if (document.location.host.startsWith("192.168.100.113")) {
+                ws_url = "ws://192.168.100.113:9988"
             } else {
                 var ws_proto = document.location.protocol === "https:" ? "wss:" : "ws:"
                 ws_url = ws_proto + "//" + document.location.host + "/realtime"

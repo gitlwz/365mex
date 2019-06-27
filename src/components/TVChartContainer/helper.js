@@ -17,8 +17,8 @@ export function getCurrentLanguage() {
     return value || 'zh';
 }
 export function getDatafeedUrl() {
-    let url = "http://192.168.1.21:9696";
-    if (process.env.NODE_ENV !== 'development' && !document.location.host.startsWith("192.168.1.22")) {//非开发环境
+    let url = "http://192.168.100.113:9696";
+    if (process.env.NODE_ENV !== 'development' && !document.location.host.startsWith("192.168.100.113")) {//非开发环境
         url = document.location.protocol + "//" + document.location.host;
     }
     return url;

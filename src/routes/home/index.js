@@ -49,12 +49,12 @@ class Index extends Component {
     }, 250);
     componentWillMount = () => {
         if (process.env.NODE_ENV === 'development') {//开发环境
-            this.ws = new webSocket("ws://192.168.1.22:9988", null, { breatheParams: "ping", reconnectInterval: 10000, timeoutInterval: 10000, debugger: false });
+            this.ws = new webSocket("ws://192.168.100.113:9988", null, { breatheParams: "ping", reconnectInterval: 10000, timeoutInterval: 10000, debugger: false });
         } else {//部署环境
-            // this.ws = new webSocket("ws://192.168.1.22:9988", null, { breatheParams: "ping", reconnectInterval: 600000, timeoutInterval: 10000, debugger: false });
-            var ws_url = "ws://192.168.1.22:9988"
-            if (document.location.host.startsWith("192.168.1.22")) {
-                ws_url = "ws://192.168.1.22:9988"
+            // this.ws = new webSocket("ws://192.168.100.113:9988", null, { breatheParams: "ping", reconnectInterval: 600000, timeoutInterval: 10000, debugger: false });
+            var ws_url = "ws://192.168.100.113:9988"
+            if (document.location.host.startsWith("192.168.100.113")) {
+                ws_url = "ws://192.168.100.113:9988"
             } else {
                 var ws_proto = document.location.protocol === "https:" ? "wss:" : "ws:"
                 ws_url = ws_proto + "//" + document.location.host + "/realtime"
@@ -213,9 +213,9 @@ class Index extends Component {
                                 </Row>
                             </div>
                         </div>
-                            
 
-                            {/* <div><h3>2</h3></div>
+
+                        {/* <div><h3>2</h3></div>
                             <div><h3>3</h3></div>
                             <div><h3>4</h3></div> */}
                         {/* </Carousel> */}
@@ -234,7 +234,7 @@ class Index extends Component {
                                     <p>{$('一流团队打造专业安全')}</p>
                                     <p>{$('多重防御让你资产无忧')}</p>
                                 </div>
-                                
+
                             </Col>
                             <Col className="safety-logo" span={12}>
                                 <div className="safety-logo-image"></div>
@@ -250,7 +250,7 @@ class Index extends Component {
                                     <p>{$('资金流转快速')}</p>
                                     <p>{$('交易畅通无阻')}</p>
                                 </div>
-                                
+
                             </Col>
                         </Row>
                         <Row className="service-row">
@@ -260,7 +260,7 @@ class Index extends Component {
                                     <p>{$('24小时客服在线服务')}</p>
                                     <p>{$('保障您的优质服务')}</p>
                                 </div>
-                                
+
                             </Col>
                             <Col className="service-logo" span={12}>
                                 <div className="service-logo-image"></div>
